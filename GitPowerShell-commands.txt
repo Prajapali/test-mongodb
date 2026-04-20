@@ -1,0 +1,128 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\CBC\DSAI\04-NOSQL\MyNotes> git clone https://github.com/Prajapali/test-mongodb.git
+Cloning into 'test-mongodb'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+PS C:\CBC\DSAI\04-NOSQL\MyNotes> cd .\test-mongodb\
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git add .
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   "\360\237\223\230 NoSQL Cheat Sheet.docx"
+
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> dir
+
+
+    Directory: C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2026-04-20  10:27 AM             14 README.md
+-a----        2026-04-07   8:44 AM          17503 📘 NoSQL Cheat Sheet.docx
+
+
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> dir
+
+
+    Directory: C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2026-04-07   8:44 AM          17503 NoSQL Cheat Sheet.docx
+-a----        2026-04-20  10:27 AM             14 README.md
+
+
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git add '.\NoSQL Cheat Sheet.docx'
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git commit -m "My First File to add"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Prajapali@Paliha.(none)')
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/Prajapali/test-mongodb.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git config --global user.email "prajapali@gmail.com"
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git config --global user.name "Prajapali"
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=prajapali@gmail.com
+user.name=Prajapali
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/Prajapali/test-mongodb.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git commit -m "My First File to add"
+[main 4767989] My First File to add
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 NoSQL Cheat Sheet.docx
+ create mode 100644 "\360\237\223\230 NoSQL Cheat Sheet.docx"
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb> git push
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 14.53 KiB | 7.27 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Prajapali/test-mongodb.git
+   336958e..4767989  main -> main
+PS C:\CBC\DSAI\04-NOSQL\MyNotes\test-mongodb>
