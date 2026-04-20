@@ -1,0 +1,41 @@
+# MongoDB Mini Cheat Sheet
+
+# FIND
+db.students.find({ age: 22 })
+
+# FIND ONE
+db.students.findOne({ age: 22 })
+
+# LIMIT
+db.students.find().limit(1)
+
+# SKIP
+db.students.find().skip(1)
+
+# SORT
+db.students.find().sort({ age: 1 })      // ascending
+db.students.find().sort({ age: -1 })     // descending
+
+# SORT + LIMIT
+db.students.find().sort({ age: -1 }).limit(1)
+
+# SORT + SKIP + LIMIT
+db.students.find().sort({ age: -1 }).skip(1).limit(1)
+
+# COMPARISON OPERATORS
+db.students.find({ age: { $gt: 20 } })
+db.students.find({ age: { $lt: 25 } })
+
+# OR
+db.students.find({
+  $or: [
+    { age: 20 },
+    { age: 22 }
+  ]
+})
+
+# ARRAY MATCH
+db.students.find({ skills: "Python" })
+
+# ARRAY ALL
+db.students.find({ skills: { $all: ["Python", "Pandas"] } })
