@@ -13,9 +13,11 @@ This is my personal 7-day plan to start learning Python step by step.
 ```python
 print("Hello, world!")
 
+```
+
 **Practice :** Change the message and Print your name
 
-🟢 Day 2 — Variables & Input
+## 🟢 Day 2 — Variables & Input
 
 Goal: Store and use data
 
